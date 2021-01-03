@@ -3,6 +3,15 @@
   margin: 0px !important;
 }
 
+body {
+  font-family: 'Roboto+Mono', sans-serif;
+}
+
 .header {
   text-align: center;
+}
+
+.current-balance {
+  text-align: center;
+  padding-top: 10px !important;
 }
