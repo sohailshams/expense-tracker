@@ -111,3 +111,26 @@ body {
   max-width: 70%;
   margin: 10px auto !important;
 }
+
+.input-form {
+  padding: 0 10px !important;
+}
+
+.add-transaction {
+  margin: 10px auto !important;
+  max-width: 450px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 20px !important;
+}
+
+.transaction-detail {
+  margin-bottom: 10px !important;
+}
+
+.submit-btn {
+  min-width: 100px !important;
+  margin-top: 20px !important;
+}

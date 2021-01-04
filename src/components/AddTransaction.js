@@ -1,0 +1,42 @@
+import React from 'react';
+
+const AddTransaction = () => {
+  return (
+    <div className="add-transaction">
+      <h4>Add New Transaction</h4>
+      <hr className="underline" />
+      <form className="input-form">
+        <div className="form-control">
+          <label className="heading" htmlFor="description">
+            Description
+          </label>
+          <input
+            className="transaction-detail"
+            type="text"
+            id="description"
+            placeholder="Transaction Detail"
+          />
+        </div>
+        <div className="form-control">
+          <label className="heading" htmlFor="transaction-amount">
+            Transaction Amount
+          </label>
+          <input
+            type="number"
+            id="transaction-amount"
+            placeholder="Enter Transaction Amount"
+          />
+        </div>
+        <button
+          className="btn waves-effect waves-light submit-btn"
+          type="submit"
+          name="action"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  );
+};
+
+export default AddTransaction;
