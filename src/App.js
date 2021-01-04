@@ -1,6 +1,7 @@
 import './App.css';
 import Balance from './components/Balance';
 import Header from './components/Header';
+import AccountSummary from './components/AccountSummary';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <div className="container-fluid">
         <Balance />
+        <AccountSummary />
       </div>
     </div>
   );

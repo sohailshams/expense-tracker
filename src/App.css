@@ -15,3 +15,28 @@ body {
   text-align: center;
   padding-top: 10px !important;
 }
+
+.account-summary {
+  background-color: #fafafa;
+  width: 30%;
+  padding: 20px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px auto !important;
+  border: solid 1px grey;
+}
+
+.income {
+  padding: 10px !important;
+  border-right: 1px solid gray;
+}
+
+.income-expense {
+  margin-top: 10px !important;
+}
+
+.expense {
+  padding: 10px !important;
+}
