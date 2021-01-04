@@ -68,12 +68,12 @@ body {
 }
 
 .list li.minus {
-  border-right: 5px solid #b6960a !important;
+  border-right: 5px solid #ee6e73 !important;
 }
 
 .list li.minus:hover {
-  border-right: 5px solid #b6960a !important;
-  background-color: #b6960a !important;
+  border-right: 5px solid #ee6e73 !important;
+  background-color: #ee6e73 !important;
   color: #f7f7f7;
 }
 
