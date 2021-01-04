@@ -17,6 +17,8 @@ const AddTransaction = () => {
             type="text"
             id="description"
             placeholder="Transaction Detail"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
           />
         </div>
         <div className="form-control">
@@ -27,6 +29,8 @@ const AddTransaction = () => {
             type="number"
             id="transaction-amount"
             placeholder="Enter Transaction Amount"
+            value={transactionAmount}
+            onChange={(e) => setTransactionAmount(e.target.value)}
           />
         </div>
         <button
