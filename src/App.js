@@ -4,10 +4,11 @@ import Header from './components/Header';
 import AccountSummary from './components/AccountSummary';
 import TransactionHistory from './components/TransactionHistory';
 import AddTransaction from './components/AddTransaction';
+import { GlobalContextProvider } from './context/GlobalState';
 
 function App() {
   return (
-    <div>
+    <GlobalContextProvider>
       <Header />
       <div className="container-fluid">
         <Balance />
@@ -15,7 +16,7 @@ function App() {
         <TransactionHistory />
         <AddTransaction />
       </div>
-    </div>
+    </GlobalContextProvider>
   );
 }
 
