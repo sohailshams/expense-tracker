@@ -7,6 +7,15 @@ body {
   font-family: 'Roboto+Mono', sans-serif;
 }
 
+.transaction-history {
+  margin: 20px auto !important;
+  max-width: 450px;
+}
+
+.transaction-history h4 {
+  text-align: center;
+}
+
 .header {
   text-align: center;
 }
@@ -18,7 +27,7 @@ body {
 
 .account-summary {
   background-color: #fafafa;
-  width: 30%;
+  max-width: 60%;
   padding: 20px !important;
   display: flex;
   justify-content: center;
@@ -39,4 +48,66 @@ body {
 
 .expense {
   padding: 10px !important;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px !important;
+}
+
+.list li {
+  background-color: #fafafa;
+  box-shadow: var(--box-shadow);
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px !important;
+  margin: 10px 0 !important;
+}
+
+.list li.minus {
+  border-right: 5px solid #b6960a !important;
+}
+
+.list li.minus:hover {
+  border-right: 5px solid #b6960a !important;
+  background-color: #b6960a !important;
+  color: #f7f7f7;
+}
+
+.list li.plus {
+  border-right: 5px solid #2da3ad !important;
+}
+
+.list li.plus:hover {
+  border-right: 5px solid #2da3ad;
+  background-color: #2da3ad;
+  color: #f7f7f7;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #8a6a66;
+  border: 0;
+  color: #fff;
+  font-size: 20px !important;
+  line-height: 20px !important;
+  padding: 2px 5px !important;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+
+.underline {
+  max-width: 70%;
+  margin: 10px auto !important;
 }
