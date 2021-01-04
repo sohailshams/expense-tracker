@@ -134,3 +134,11 @@ body {
   min-width: 100px !important;
   margin-top: 20px !important;
 }
+
+.minus-color {
+  color: #ee6e73 !important;
+}
+
+.plus-color {
+  color: #2da3ad !important;
+}
