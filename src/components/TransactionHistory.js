@@ -5,7 +5,7 @@ import Transaction from './Transaction';
 const TransactionHistory = () => {
   const { transactions } = useContext(GlobalContext);
 
-  return (
+  return transactions.length ? (
     <div className="transaction-history">
       <h4>Transaction History</h4>
       <hr className="underline" />
@@ -14,6 +14,11 @@ const TransactionHistory = () => {
           <Transaction key={transaction.id} transaction={transaction} />
         ))}
       </ul>
+    </div>
+  ) : (
+    <div className="empty">
+      <h4>No transactions history!</h4>
+      <hr className="underline" />
     </div>
   );
 };

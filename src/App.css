@@ -142,3 +142,9 @@ body {
 .plus-color {
   color: #2da3ad !important;
 }
+
+.empty {
+  text-align: center;
+  margin: 20px auto !important;
+  max-width: 450px;
+}
