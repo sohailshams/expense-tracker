@@ -4,6 +4,8 @@ import Transaction from './Transaction';
 
 const TransactionHistory = () => {
   const { transactions } = useContext(GlobalContext);
+  const localData = localStorage.getItem('transactions');
+  console.log(localData);
 
   return transactions.length ? (
     <div className="transaction-history">
