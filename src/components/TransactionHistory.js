@@ -10,10 +10,10 @@ const TransactionHistory = () => {
       <h4>Transaction History</h4>
       <hr className="underline" />
       <ul className="list">
-        {transactions &&
-          transactions.map((transaction) => (
-            <Transaction key={transaction.id} transaction={transaction} />
-          ))}
+        {transactions.map((transaction) => {
+          console.log(transactions);
+          return <Transaction key={transaction.id} transaction={transaction} />;
+        })}
       </ul>
     </div>
   ) : (
