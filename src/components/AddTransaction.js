@@ -3,8 +3,8 @@ import { GlobalContext } from '../context/GlobalState';
 import { v1 as uuid } from 'uuid';
 
 const AddTransaction = () => {
-  const [description, setDescription] = useState();
-  const [transactionAmount, setTransactionAmount] = useState();
+  const [description, setDescription] = useState('');
+  const [transactionAmount, setTransactionAmount] = useState('');
 
   const { addTransaction } = useContext(GlobalContext);
 
