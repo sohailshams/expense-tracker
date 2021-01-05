@@ -57,14 +57,26 @@ body {
 }
 
 .list li {
-  background-color: #fafafa;
+  background-color: #fafafa !important;
   box-shadow: var(--box-shadow);
-  color: #333;
+  color: #333 !important;
   display: flex;
   justify-content: space-between;
   position: relative;
   padding: 10px !important;
   margin: 10px 0 !important;
+}
+
+.income-summary {
+  color: #2da3ad !important;
+  font-weight: bold;
+  padding-top: 5px !important;
+}
+
+.expense-summary {
+  color: #ee6e73 !important;
+  font-weight: bold;
+  padding-top: 5px !important;
 }
 
 .list li.minus {
@@ -74,7 +86,7 @@ body {
 .list li.minus:hover {
   border-right: 5px solid #ee6e73 !important;
   background-color: #ee6e73 !important;
-  color: #f7f7f7;
+  color: #f7f7f7 !important;
 }
 
 .list li.plus {
@@ -82,9 +94,9 @@ body {
 }
 
 .list li.plus:hover {
-  border-right: 5px solid #2da3ad;
-  background-color: #2da3ad;
-  color: #f7f7f7;
+  border-right: 5px solid #2da3ad !important;
+  background-color: #2da3ad !important;
+  color: #f7f7f7 !important;
 }
 
 .delete-btn {
@@ -139,6 +151,11 @@ body {
   color: #ee6e73 !important;
 }
 
+.minus-message {
+  padding-top: 5px !important;
+  color: #ee6e73 !important;
+}
+
 .plus-color {
   color: #2da3ad !important;
 }
@@ -147,4 +164,27 @@ body {
   text-align: center;
   margin: 20px auto !important;
   max-width: 450px;
+}
+
+@media screen and (max-width: 425px) {
+  .transaction-history {
+    max-width: 350px !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    font-size: 40px !important;
+    padding-top: 6px !important;
+  }
+
+  .empty-transaction,
+  .add-transaction h4,
+  .transaction-history h4 {
+    font-size: 25px !important;
+  }
+
+  .minus-message {
+    font-size: 12px !important;
+  }
 }

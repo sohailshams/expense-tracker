@@ -4,8 +4,6 @@ import Transaction from './Transaction';
 
 const TransactionHistory = () => {
   const { transactions } = useContext(GlobalContext);
-  const localData = localStorage.getItem('transactions');
-  console.log(localData);
 
   return transactions.length ? (
     <div className="transaction-history">
@@ -19,7 +17,7 @@ const TransactionHistory = () => {
     </div>
   ) : (
     <div className="empty">
-      <h4>No transactions history!</h4>
+      <h4 className="empty-transaction">No transactions history!</h4>
       <hr className="underline" />
     </div>
   );

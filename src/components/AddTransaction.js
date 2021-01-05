@@ -52,12 +52,15 @@ const AddTransaction = () => {
             onChange={(e) => setTransactionAmount(e.target.value)}
           />
         </div>
+        <p className="minus-message">
+          * Please add minus sign with expense transaction
+        </p>
         <button
           className="btn waves-effect waves-light submit-btn"
           type="submit"
           name="action"
         >
-          Submit
+          ADD
         </button>
       </form>
     </div>
