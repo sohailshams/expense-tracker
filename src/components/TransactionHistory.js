@@ -11,7 +11,6 @@ const TransactionHistory = () => {
       <hr className="underline" />
       <ul className="list">
         {transactions.map((transaction) => {
-          console.log(transactions);
           return <Transaction key={transaction.id} transaction={transaction} />;
         })}
       </ul>
