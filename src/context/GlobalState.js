@@ -11,10 +11,14 @@ export const GlobalContext = createContext(initialState);
 
 // Create a provider for GlobalContext
 export const GlobalContextProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(AppReducer, initialState, () => {
-    const localData = localStorage.getItem('state');
-    return localData ? JSON.parse(localData) : [];
-  });
+  const [state, dispatch] = useReducer(
+    AppReducer,
+    initialState,
+    (emptyState) => {
+      const localData = localStorage.getItem('state');
+      return localData ? JSON.parse(localData) : emptyState;
+    }
+  );
 
   useEffect(() => {
     localStorage.setItem('state', JSON.stringify(state));
