@@ -168,7 +168,7 @@ body {
 
 @media screen and (max-width: 425px) {
   .transaction-history {
-    max-width: 350px !important;
+    max-width: 250px !important;
   }
 }
 
