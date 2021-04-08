@@ -19,11 +19,11 @@ Expense Tracker is developed in connection to my learning of **React**. Users ca
 
 ## Deployment
 
-The deployed project and project's **github repository** can be viewed on following links. To test card payments use
+The deployed project and project's **github repository** can be viewed on following links.
 
-- **[Slack Clone Live Page](https://sohailshams.github.io/expense-tracker/)**
+- **[Expense Tracker Live Page](https://sohailshams.github.io/expense-tracker/)**
 
-- **[Slack Clone Live Page Github Repository](https://github.com/sohailshams/expense-tracker)**
+- **[Expense Tracker Github Repository](https://github.com/sohailshams/expense-tracker)**
 
 ## Credits
 
